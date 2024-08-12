@@ -244,7 +244,7 @@ async function init() {
     // output array = [business name, phone, url(no https prefix)]
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const lines = fileContent.split(/\r?\n/); // Split by either \n or \r\n
-    for (let i = 0; i < lines.length - 1; i++) {
+    for (let i = 0; i < lines.length; i++) {
         const fileName = lines[i];
         //console.log('file name:', fileName)
         const row = fileName.split('-');
